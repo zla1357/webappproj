@@ -50,7 +50,7 @@
                     <a class="navbar-brand" runat="server" href="~/">응용 프로그램 이름</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" id="mainNavBar" runat="server">
                         <li><a runat="server" href="~/">홈</a></li>
                         <li><a runat="server" href="~/About">정보</a></li>
                         <li><a runat="server" href="~/Contact">연락처</a></li>
@@ -68,5 +68,6 @@
         </div>
 
     </form>
+    <script src="Scripts/WebForms/MasterScript.js"></script>
 </body>
 </html>

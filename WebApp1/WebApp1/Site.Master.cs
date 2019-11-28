@@ -11,7 +11,10 @@ namespace WebApp1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack)
+            {
+                string[] navTitle = { "t1", "t2", "t3" };
+            }
         }
     }
 }
