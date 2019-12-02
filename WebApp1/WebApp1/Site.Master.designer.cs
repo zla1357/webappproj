@@ -7,13 +7,11 @@
 // </자동 생성됨>
 //------------------------------------------------------------------------------
 
-namespace WebApp1
-{
-
-
-    public partial class SiteMaster
-    {
-
+namespace WebApp1 {
+    
+    
+    public partial class SiteMaster {
+        
         /// <summary>
         /// mainNavBar 컨트롤입니다.
         /// </summary>
@@ -22,7 +20,25 @@ namespace WebApp1
         /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl mainNavBar;
-
+        
+        /// <summary>
+        /// ctlMemoList 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater ctlMemoList;
+        
+        /// <summary>
+        /// sdsMemoList 컨트롤입니다.
+        /// </summary>
+        /// <remarks>
+        /// 자동 생성 필드입니다.
+        /// 수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하세요.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sdsMemoList;
+        
         /// <summary>
         /// MainContent 컨트롤입니다.
         /// </summary>

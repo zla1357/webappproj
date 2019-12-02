@@ -13,7 +13,7 @@ namespace WebApp1
         {
             if (!Page.IsPostBack)
             {
-                string[] navTitle = { "t1", "t2", "t3" };
+                
             }
         }
     }

@@ -51,9 +51,18 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" id="mainNavBar" runat="server">
-                        <li><a runat="server" href="~/">홈</a></li>
-                        <li><a runat="server" href="~/About">정보</a></li>
-                        <li><a runat="server" href="~/Contact">연락처</a></li>
+                        <asp:Repeater ID="ctlMemoList" runat="server" DataSourceID="sdsMemoList">
+                            <ItemTemplate>
+                                <li>
+                                    <a href="" runat="server"><%# Eval("NAVTITLE") %></a>
+                                </li>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <asp:SqlDataSource ID="sdsMemoList" runat="server"
+                            ConnectionString='<%$ ConnectionStrings:test_dbConnectionString %>'
+                            SelectCommand="SELECT [Id], [NAVTITLE] FROM [NAV_BAR] ORDER BY [Id]">
+                            
+                        </asp:SqlDataSource>
                     </ul>
                 </div>
             </div>
